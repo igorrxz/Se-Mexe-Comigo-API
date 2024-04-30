@@ -10,7 +10,7 @@ const tela_inicial = () => {
                         <img class = "imagem" src="https://conecta.vivendocfit.com/assets/logo_fav-a853b0e2.svg"/>
                     </div>
                     <div class = "nome_usuario">
-                    <p>Olá, MATHEUS GUILHERME DA SILVA LINS
+                    <p>Olá, MATHEUS GUILHERME
                     </p>
                     <p class="bora_semexer">
                     Bora se mexer?
@@ -51,10 +51,10 @@ const tela_inicial = () => {
                         Futsal
                     </div>
                     
-                    <div class="esportes">
+                    {/* <div class="esportes">
                         <img class="imagem_esportes" src="https://conecta.vivendocfit.com/assets/ICON%20OUTROS-fd8ee86d.svg"/>
                         Outros
-                    </div>
+                    </div> */}
                     
                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5"/></svg>
 
@@ -71,7 +71,7 @@ const tela_inicial = () => {
                     </div>
                 </div>
                 
-                <div class="secao_cards">
+                <div class="sessao_cards">
                     <button>
                         <img class="img_cards" src="https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616" />
                         <div class="info_cards">
