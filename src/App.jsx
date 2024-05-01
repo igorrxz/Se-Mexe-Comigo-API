@@ -1,13 +1,17 @@
-import React from 'react'
-import Tela_inicial from "./components/Tela_inicial/tela_inicial"
+import React from "react"
 
-const App = () => {
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import ProfilePage from "@/pages/Profile/ProfilePage"
+import HomePage from "@/pages/HomePage/HomePage"
+
+export default function App(){
   return (
-    <>
-    
-    <Tela_inicial/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route Component={ProfilePage} path="/profile" />
+        <Route Component={HomePage} path="/" />
+      </Routes>
+    </BrowserRouter>
   )
 }
-
-export default App

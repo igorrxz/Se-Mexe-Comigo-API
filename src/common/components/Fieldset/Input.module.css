@@ -1,0 +1,9 @@
+.base {
+  width: 100%;
+  padding: 0.8rem 1rem;
+
+  border: none;
+
+  font-size: 1.1rem;
+  font-weight: 400;
+}

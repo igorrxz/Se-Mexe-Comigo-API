@@ -1,0 +1,32 @@
+.optionBar {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  padding-block: 4.44vw;
+  /* padding-left: 1rem; */
+  padding-inline: 11px;
+
+  border: 1px solid #000;
+
+  list-style: none;
+}
+
+.item {
+  width: max-content;
+
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.item[data-item-active-status="normal"] {
+  color: rgba(0,0,0,0.5);
+}
+
+
+.item[data-item-active-status="active"] {
+
+  color: #000;
+
+  border-bottom: 1px solid #000;
+}
