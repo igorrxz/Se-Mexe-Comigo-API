@@ -3,7 +3,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    padding: 30px;
+    padding: 20px;
     flex-direction: column;
 }
 
@@ -11,7 +11,7 @@
     
     display: flex;
     flex-direction: row;
-    height: 150px;
+    
     
     
 }
@@ -24,19 +24,19 @@
     margin-top: 25px;
 }
 .imagem{
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
 }
 
 .nome_usuario{
-    /* border: purple 1px solid; */
-    height: 100px;
-    width: 300px;
+    border: purple 1px solid;
+    
+    
     display: flex;
     flex-direction: column;
     margin-top: 25px;
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color:black;
    
@@ -60,8 +60,8 @@
 }
 
 .tamanho_botao_lateral{
-    height:50px;
-    width: 50px;
+    height:30px;
+    width: 30px;
 }
 
 
@@ -121,75 +121,74 @@ input:focus {
 
 .arrow{
 
-    height: 50px;
+    height: 20px;
     width: 50px;
     display: flex;
 }
 
 .esportes{
     
-    height: 110px;
-    width: 90px;
+    /* height: 10px; */
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .imagem_esportes{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 .opcoes_eventos{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    
+    justify-content: space-between;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
+    /* border: red 1px solid; */
 }
 
 .div_eventos{
-    width: 130px;
-    height: 30px;
-   
+    
+    font-size: 14px;
     display: flex;
     color:rgb(72, 70, 70);
     justify-content: center;
 }
 
-.secao_cards{
-    /* border: red 1px solid; */
-    width: 560px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    padding: 50px;
+.sessao_cards{
+    
+    
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    gap: 20px;
+    padding: 20px;
     padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    
+    
+    
     
 }
 
-.secao_cards button{
+.sessao_cards button{
     border: rgb(83, 82 , 82) 1px solid;
-    /* width: 210px;
-    height: 220px; */
-    margin-left: 10px;
+    
+    
     border-radius: 15px;
     background-color: white;
     cursor: pointer;
+    /* overflow-x: auto;
+    display: flex;
+    white-space: nowrap; */
+    
     
     
 }
 
-
-.cards{
-    border: rgb(83, 82 , 82) 1px solid;
-    /* width: 210px;
-    height: 220px; */
-    margin-left: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    
-}
 
 .img_cards{
     width: 209px;
