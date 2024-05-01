@@ -1,0 +1,59 @@
+.profile {
+  display: block;
+}
+
+.back {
+  position: absolute;
+  top: var(--section-padding);
+  left: var(--container-padding);
+}
+
+.top {
+  position: relative;  
+}
+
+.camera {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.image {
+  display: block;
+  margin-inline: auto;
+}
+
+.name {
+  margin-bottom: 2rem;
+
+  text-align: center;
+  font-weight: 700;
+}
+
+.fieldset {
+  margin-inline: 35px;
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+
+  padding-block: 2rem;
+}
+
+.genderOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-inline: 1rem;
+
+  list-style: none;
+}
+
+.genderOption {
+  display: flex;
+  place-content: center;
+  gap: 8px;
+}
