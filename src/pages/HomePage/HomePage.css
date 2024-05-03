@@ -12,14 +12,13 @@
     display: flex;
     flex-direction: row;
     
-    
-    
+    justify-content: space-between;
 }
 
 .logo{
-    /* border: red 1px solid; */
-    height: 100px;
-    width: 100px;
+    
+    /* height: 100px;
+    width: 100px; */
     
     margin-top: 25px;
 }
@@ -29,17 +28,16 @@
 }
 
 .nome_usuario{
-    border: purple 1px solid;
-    
-    
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
-    margin-left: 20px;
+    justify-content: center;
+   
+}
+.nome{
     font-size: 18px;
     font-weight: 500;
     color:black;
-   
+
 }
 
 .bora_semexer{
@@ -50,15 +48,18 @@
 
 .botao_lateral{
 
-    /* border: orange 1px solid; */
-    height: 50px;
-    width: 50px;
-   
-   
-    margin-top: 50px;
-    margin-left: 75px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
 }
 
+.container_lateral{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 .tamanho_botao_lateral{
     height:30px;
     width: 30px;
@@ -100,17 +101,15 @@ input:focus {
 
 .menu_esportes{
    
-    height: 200px;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2%;
-    
 }
 .texto_esportes{
     
-    height: 30px;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,20 +159,24 @@ input:focus {
 
 .sessao_cards{
     
-    
+    /* border: orange 1px solid; */
     /* display: grid;
     grid-template-columns: repeat(2, 1fr); */
     gap: 20px;
+    /* height: 400px; */
     padding: 20px;
     padding-top: 20px;
-    display: flex;
     flex-direction: row;
+    display: flex;
+    overflow-x: auto;
     
-    
+}
+.card_container {
+    display: flex;
+    flex-direction: column;
     
     
 }
-
 .sessao_cards button{
     border: rgb(83, 82 , 82) 1px solid;
     
@@ -193,7 +196,7 @@ input:focus {
 .img_cards{
     width: 209px;
     
-    height: 110px;
+    height: 100px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
@@ -201,7 +204,8 @@ input:focus {
 
 .info_cards{
     border-bottom:rgb(83, 82 , 82) 1px solid;
-    height: 55px;
+    height: 50px;
+    padding-top: 5px;
 }
 
 .nome_esporte{
@@ -221,10 +225,12 @@ input:focus {
 .data_esporte{
     /* border: red 1px solid; */
    
-    width: 150px;
+    height: 50px;
     font-size: 10px;
-    margin-left: 10px;
-    margin-top: 3px;
+    /* margin-left: 10px;
+    margin-top: 3px; */
+    display:flex;
+    flex-direction: column;
 }
 
 .data_hora{
