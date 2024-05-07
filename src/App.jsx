@@ -1,12 +1,13 @@
 import React from 'react'
-import Tela_inicial from "./components/Tela_inicial/tela_inicial"
+import Esportes from './pages/EsportesPage/EsportesPage'
+import HomePage from './pages/Homepage/HomePage'
+import TelaInicial from './components/TelaInicial/TelaInicial'
 
 const App = () => {
   return (
-    <>
-    
-    <Tela_inicial/>
-    </>
+    <div>
+      <TelaInicial />
+    </div>
   )
 }
 

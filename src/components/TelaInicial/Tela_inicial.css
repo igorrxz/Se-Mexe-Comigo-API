@@ -1,0 +1,187 @@
+.div_pai {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    flex-direction: column;
+    overflow: auto;
+
+}
+
+.div_pai_navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+
+}
+.container{
+    overflow: auto;
+}
+
+.div_barra_principal {
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+
+
+
+.imagem {
+    height: 60px;
+    width: 60px;
+}
+
+.nome_usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.nome {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+
+
+}
+
+.bora_semexer {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A202C;
+}
+
+.botao_lateral {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container_lateral {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 10px; */
+
+}
+
+.tamanho_botao_lateral {
+    height: 30px;
+    width: 30px;
+}
+
+
+.barra_pesquisa {
+
+    /* width: 550px; */
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: #e8e8ea;
+
+}
+
+.input_pesquisa {
+
+    background-color: #e8e8ea;
+    border: #e8e8ea;
+    padding: 10px;
+    margin-left: 10px;
+    width: 100%;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.barra_icon {
+
+    height: 25px;
+    width: 30px;
+}
+
+.menu_esportes {
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.texto_esportes {
+
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.arrow {
+
+
+
+    display: flex;
+    border: red 1px solid;
+}
+
+
+
+.menu_esportes button {
+
+    /* height: 10px; */
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    -webkit-touch-callout: none;
+}
+
+
+
+.opcoes_eventos {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    height: 30px;
+    margin-top: 30px;
+    /* border: red 1px solid; */
+}
+
+.div_eventos {
+
+    font-size: 14px;
+    display: flex;
+    color: rgb(72, 70, 70);
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
