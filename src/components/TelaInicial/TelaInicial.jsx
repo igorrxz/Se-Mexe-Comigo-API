@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Tela_inicial.css"
+import "./TelaInicial.css"
 import Cards from "../Cards/Cards"
 
 const TelaInicial = () => {
@@ -82,10 +82,11 @@ const TelaInicial = () => {
                     </div>
                 </div>
                 <div className='cards'>
-                    <Cards />
-                    <Cards />
-                    <Cards />
-                    <Cards />
+                <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
+                <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
+                <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
+                <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
+                <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
                 </div>
                 {/* <div class="sessao_cards">
                     <button>

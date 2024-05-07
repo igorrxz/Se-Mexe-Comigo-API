@@ -1,14 +1,14 @@
 import React from 'react'
 import "./Cards.css"
-const Cards = () => {
+const Cards = ({NomeAtividade, SubnomeEsporte, Imagem}) => {
     return (
         <div class="sessao_cards">
             <button>
 
-                <img class="img_cards" src="https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616" />
+                <img class="img_cards" src= {Imagem}/>
                 <div class="info_cards">
-                    <p class="nome_esporte">Funcional Jaqueira</p>
-                    <p class="sub_nome_esporte">Funcional</p>
+                    <p class="nome_esporte">{NomeAtividade}</p>
+                    <p class="sub_nome_esporte">{SubnomeEsporte}</p>
                 </div>
                 <div class="data_esporte">
                     <div class="data_hora">

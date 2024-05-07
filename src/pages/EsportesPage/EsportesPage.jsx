@@ -4,7 +4,7 @@ const EsportesPages = () => {
   return (
     <div>
 
-    <Esportes prop={"Gira aspas"}/>
+    <Esportes Titulo={"Funcional"}/>
 
     </div>
   )
