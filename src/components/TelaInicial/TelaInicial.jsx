@@ -1,6 +1,8 @@
 import React from 'react'
 import "./TelaInicial.css"
 import Cards from "../Cards/Cards"
+import { Link } from 'react-router-dom'
+
 
 const TelaInicial = () => {
     return (
@@ -43,11 +45,13 @@ const TelaInicial = () => {
                 <div class="menu_esportes">
 
                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 7l-5 5l5 5" /></svg>
-
+                    
+                    <Link to="/EsportesPage">
                     <button>
                         <img class="imagem_esportes" src="https://conecta.vivendocfit.com/assets/ICON%20FUNCIONAL-34454444.svg" />
                         <span>Funcional</span>
                     </button>
+                    </Link>
 
 
 
