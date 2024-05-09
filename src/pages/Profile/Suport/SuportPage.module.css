@@ -1,0 +1,65 @@
+.container {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerInput{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin: 34px 0;
+  display: flex;
+  border-radius: 8px;
+}
+
+.containerInput input{
+  background-color: orange;
+  border: 0;
+  font-size: 20px;
+  color: #FFF;
+  outline: none;
+  margin-right: 8px;
+}
+
+.container input::placeholder{
+  color: black;
+}
+
+.buttonSearch{
+  background-color: orange;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+
+}
+
+.title {
+  margin: 20px 10px;
+  font-size: 25px;
+}
+
+.textarea {
+  display: block;
+  border-color: orange;
+
+  margin: 15px 0;
+  width: 250px;
+  height: 35px;
+
+  resize: none;
+}
+
+.doubleHeight {
+  height: 70px;
+}

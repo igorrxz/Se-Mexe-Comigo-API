@@ -1,7 +1,6 @@
 import React from 'react'
 import "./elementos_tela_inicial.css"
-
-const tela_inicial = () => {
+export default function tela_inicial () {
     return (
         <div>
             <div class="div_pai">
@@ -184,10 +183,7 @@ const tela_inicial = () => {
                             </div>
                         </div>
                     </button>
-                    
                    
-                   
-                    
                 </div>
 
 
@@ -198,5 +194,3 @@ const tela_inicial = () => {
         </div>
     )
 }
-
-export default tela_inicial

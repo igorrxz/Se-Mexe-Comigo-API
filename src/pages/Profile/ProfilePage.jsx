@@ -1,12 +1,30 @@
 import profileImage from "@/assets/Profile.png"
 
 import styles from "./ProfilePage.module.css"
-import Arrow from "@/common/components/svg/Arrow"
+
 import OptionBar from "./OptionBar"
-import Fieldset from "@/common/components/Fieldset"
+
+import Arrow from "@/common/components/svg/Arrow"
 import PhotoCamera from "@/common/components/svg/PhotoCamera"
 
+import useOption from "./userOptions"
+import EditData from "./EditData/EditData"
+import Notification from "./Notifications/Notification"
+import SuportPage from "./Suport/SuportPage"
+
+
+function DisplayableOptions({option}) {
+  switch(option) {
+    case "editdata": return <EditData />
+    case "notifications": return <Notification/>
+    case "suport": return <SuportPage/>
+    default: return null
+  }
+}
+
 export default function ProfilePage() {
+  const [option] = useOption()
+
   return (
     <main className={`${styles.profile} single`}>
       <Arrow className={styles.back} />
@@ -21,41 +39,7 @@ export default function ProfilePage() {
           <PhotoCamera className={styles.camera} />
         </div>
         <OptionBar />
-        <form className={styles.optionsList}>
-          <Fieldset.Root className={styles.fieldset} type="input">
-            <Fieldset.Label>Nome</Fieldset.Label>
-            <Fieldset.Input placeholder="Nome do Usuário" />
-          </Fieldset.Root>
-          <Fieldset.Root className={styles.fieldset} type="input">
-            <Fieldset.Label>Apelido</Fieldset.Label>
-            <Fieldset.Input placeholder="Apelido do usuário" />
-          </Fieldset.Root>
-          <Fieldset.Root className={styles.fieldset} type="input">
-            <Fieldset.Label>Gênero</Fieldset.Label>
-            <ul className={styles.genderOptions}>
-              <li className={styles.genderOption}>
-                <Fieldset.Checkbox className={styles.checkbox} />
-                <span className={styles.gender}>Masculino</span>
-              </li>
-              <li className={styles.genderOption}>
-                <Fieldset.Checkbox className={styles.checkbox} />
-                <span className={styles.gender}>Feminino</span>
-              </li>
-              <li className={styles.genderOption}>
-                <Fieldset.Checkbox className={styles.checkbox} />
-                <span className={styles.gender}>Outro</span>
-              </li>
-            </ul>
-          </Fieldset.Root>
-          <Fieldset.Root className={styles.fieldset} type="input">
-            <Fieldset.Label>Celular</Fieldset.Label>
-            <Fieldset.Input placeholder="(00) 90000-0000" />
-          </Fieldset.Root>
-          <Fieldset.Root className={styles.fieldset} type="input">
-            <Fieldset.Label>CEP</Fieldset.Label>
-            <Fieldset.Input placeholder="30800-220" />
-          </Fieldset.Root>
-        </form>
+        <DisplayableOptions option={option} />
       </div>
     </main>
   )

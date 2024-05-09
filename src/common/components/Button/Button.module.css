@@ -1,0 +1,21 @@
+.base {
+  padding: 14px 72px;
+
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.base[data-button-variant="normal"] {
+  color: #fff;
+  
+  background-color: #F7931D;  
+}
+
+.base[data-button-variant="inverted"] {
+  color: #F7931D;
+
+  background-color: #fff;
+
+  border: 1px solid #F7931D;
+}
