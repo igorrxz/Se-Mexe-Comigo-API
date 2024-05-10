@@ -6,6 +6,7 @@
   position: absolute;
   top: var(--section-padding);
   left: var(--container-padding);
+  height: 24px;
 }
 
 .top {
@@ -30,4 +31,8 @@
   font-weight: 700;
 }
 
-
+@media (orientation: portrait) {
+  .top {
+    /* display:jjnone; */
+  }
+}
