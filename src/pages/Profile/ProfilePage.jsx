@@ -10,15 +10,15 @@ import PhotoCamera from "@/common/components/svg/PhotoCamera"
 import useOption from "./userOptions"
 import EditData from "./EditData/EditData"
 import Notification from "./Notifications/Notification"
-import SuportPage from "./Suport/SuportPage"
+import SupportPage from "./Support/SupportPage"
 
 
 function DisplayableOptions({option}) {
   switch(option) {
-    case "editdata": return <EditData />
     case "notifications": return <Notification/>
-    case "suport": return <SuportPage/>
-    default: return null
+    case "suport": return <SupportPage/>
+    case "editdata": 
+    default: return <EditData />
   }
 }
 
@@ -38,7 +38,7 @@ export default function ProfilePage() {
           <p className={`${styles.name} big`}>Nome de Usuário</p>
           <PhotoCamera className={styles.camera} />
         </div>
-        <OptionBar />
+        <OptionBar className={styles.customOptionBar}/>
         <DisplayableOptions option={option} />
       </div>
     </main>

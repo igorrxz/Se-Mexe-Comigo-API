@@ -1,19 +1,28 @@
 .base {
-  padding: 14px 72px;
-
+  padding-block: 14px;
+  
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   text-align: center;
+
+  outline: none;
+  border: none;
 }
 
 .base[data-button-variant="normal"] {
   color: #fff;
   
-  background-color: #F7931D;  
+  border-radius: 7px;
+
+  background-color: #F7931D;   
 }
 
 .base[data-button-variant="inverted"] {
+  padding-block: 14px;
+
   color: #F7931D;
+  text-transform: uppercase;
+  font-weight: 300;
 
   background-color: #fff;
 

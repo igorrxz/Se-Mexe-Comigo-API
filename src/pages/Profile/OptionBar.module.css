@@ -5,7 +5,7 @@
 
   padding-block: 4.44vw;
   /* padding-left: 1rem; */
-  padding-inline: 11px;
+  padding-inline: var(--container-padding);
 
   border: 1px solid #000;
 
@@ -17,6 +17,8 @@
 
   white-space: nowrap;
   font-weight: 500;
+
+  cursor: pointer;
 }
 
 .item[data-item-active-status="normal"] {
@@ -29,4 +31,11 @@
   color: #000;
 
   border-bottom: 1px solid #000;
+}
+
+@media (orientation: portrait) {
+  .optionBar {
+     display: non; 
+  
+  }
 }
