@@ -31,11 +31,7 @@
   font-weight: 700;
 }
 
-@media (orientation: portrait) {
-  .top {
-    display: none; 
-  }
-}
+
 
 
 
