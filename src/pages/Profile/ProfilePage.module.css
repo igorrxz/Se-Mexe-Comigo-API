@@ -33,7 +33,7 @@
 
 @media (orientation: portrait) {
   .top {
-    display:jjnone; 
+    display: none; 
   }
 }
 

@@ -4,7 +4,7 @@
   gap: 2rem;
 
   padding-block: 4.44vw;
-  /* padding-left: 1rem; */
+   padding-left: 1rem; 
   padding-inline: var(--container-padding);
 
   border: 1px solid #000;
@@ -35,7 +35,7 @@
 
 @media (orientation: portrait) {
   .optionBar {
-     display: non; 
+     display: none; 
   
   }
 }
