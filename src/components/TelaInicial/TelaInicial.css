@@ -134,11 +134,7 @@ input:focus {
 }
 
 .arrow {
-
-
-
     display: flex;
-    border: red 1px solid;
 }
 
 
@@ -184,4 +180,8 @@ input:focus {
 .cards {
     display: flex;
     flex-direction: column;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+

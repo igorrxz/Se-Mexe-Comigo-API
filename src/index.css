@@ -12,3 +12,7 @@
   button{
   -webkit-tap-highlight-color: none;
 }
+
+a {
+  text-decoration: none;
+}
