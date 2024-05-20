@@ -66,10 +66,11 @@ const Evento = () => {
             <div class="Map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3950.628333432154!2d-34.9052235!3d-8.0371997!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1715885307970!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            </div>
           <div class="AbaParticipar">
-             
+             <div class="ButtonParticipar"><span>Participar do evento</span></div>
+             <div class="ButtonParticipar"><span>Chat ao vivo</span></div>
           </div>
+            </div>
 
 
     </div>

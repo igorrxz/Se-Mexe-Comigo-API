@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./TelaInicial.css"
 import Cards from "../Cards/Cards"
 import { Link } from 'react-router-dom'
+import { CriarEvento } from './CriarEvento'
 
 
 const TelaInicial = () => {
+    const [clicado, setClicado] = useState(null);
     return (
 
         <div class="div_pai">
@@ -75,15 +77,34 @@ const TelaInicial = () => {
 
                 </div>
                 <div class="opcoes_eventos">
-                    <div class="div_eventos">
+                    
+                    <button onClick={() =>{
+                        setClicado("MeusEventos");
+                        CriarEvento(clicado);
+
+                    }} class="div_eventos">
                         Meus eventos
-                    </div>
-                    <div class="div_eventos">
+                    </button>
+
+
+                    <button onClick={() =>{
+                        setClicado("ProximosEventos");
+                        CriarEvento(clicado);
+
+                    }} class="div_eventos">
                         Próximos eventos
-                    </div>
-                    <div class="div_eventos">
+                    </button>
+
+
+                    <button onClick={() =>{
+                        setClicado("CriarEventos");
+                        CriarEvento(clicado);
+                        
+                    }} class="div_eventos">
                         Criar Evento
-                    </div>
+                    </button>
+
+
                 </div>
                 <div className='cards'>
                 <Link to="/Evento">
