@@ -1,6 +1,8 @@
 import React from 'react'
 import Input from '../Input/Input'
 import './CriarEventos.css'
+import { Link } from 'react-router-dom'
+import FinalizarCriarEvento from '../CriarEventos/FinalizarCriarEvento'
 
 function CriarEvento() {
   return (
@@ -16,9 +18,11 @@ function CriarEvento() {
         </div>
         <div class="DivBoddy">
           
+          <Link to="CriarEvento">
           <button class="ButtonProximo">
             <span>Proximo</span>
           </button>
+          </Link>
         </div>
 
 

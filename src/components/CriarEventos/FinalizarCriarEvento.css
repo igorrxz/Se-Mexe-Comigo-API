@@ -1,0 +1,34 @@
+.DivPaiCriarEvento{
+    /* border: red 1px solid; */
+    
+}
+
+.DivImg{
+    width: 100%;
+    height: 180px;
+    display: flex;
+}
+
+.ImgCriarEvento{
+    width: 100%;
+    object-fit: cover;
+}
+
+.DivInformacoesEventos{
+    border: blue 1px solid;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    
+    margin-bottom: 15px;
+}
+
+.DivArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: red 1px solid;
+}

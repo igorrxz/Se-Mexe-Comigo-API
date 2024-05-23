@@ -5,6 +5,7 @@ import './index.css'
 import HomePage from './pages/Homepage/HomePage.jsx'
 import EsportesPage from './pages/EsportesPage/EsportesPage.jsx'
 import Evento from './components/Evento/Evento.jsx'
+import FinalizarCriarEvento from './components/CriarEventos/FinalizarCriarEvento.jsx'
 
 
 
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
   {
     path: "Evento",
     element: <Evento/>
-  }
+  },
+  {
+    path: "CriarEvento",
+    element: <FinalizarCriarEvento/>
+  },
 
 ])
 
