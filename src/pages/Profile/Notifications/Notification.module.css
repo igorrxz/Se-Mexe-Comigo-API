@@ -1,0 +1,25 @@
+.form {
+    padding: 83px 64px;
+    width: 100%;
+}
+
+.fieldset {
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+
+    width: 100%;
+
+    outline: 0;
+    border: 0;
+}
+
+.fieldset + .fieldset {
+    margin-top: 1.5rem;
+}
+
+.save {
+    display: block;
+
+    margin-inline: auto;
+}
