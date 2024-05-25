@@ -6,7 +6,7 @@ import HomePage from './pages/Homepage/HomePage.jsx'
 import EsportesPage from './pages/EsportesPage/EsportesPage.jsx'
 import Evento from './components/Evento/Evento.jsx'
 import FinalizarCriarEvento from './components/CriarEventos/FinalizarCriarEvento.jsx'
-
+import SideBar from './components/SideBar/SideBar.jsx'
 
 
 import{
@@ -17,7 +17,7 @@ import{
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage/>
+    element: <SideBar/>
   },
 
   {
