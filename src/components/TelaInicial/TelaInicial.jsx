@@ -16,6 +16,10 @@ const TelaInicial = () => {
     const sideBarClicada = () =>{
         setSidebarVisible(!sideBarInvisible);
     }
+
+    const ocultarSideBar = () =>{
+        setSidebarVisible(false);
+    }
     const handleClick = (componente) =>{
         switch(componente) {
             case "MeusEventos":
@@ -38,7 +42,7 @@ const TelaInicial = () => {
     return (
 
         <div class="div_pai">
-            {sideBarInvisible &&(<div className='ContainerSideBar'><SideBar/> </div>)}
+            {sideBarInvisible &&(<div className='ContainerSideBar'><button onClick={ocultarSideBar} className='OcultarSideBar'></button><div><SideBar/></div></div>)}
             
             <div class="div_pai_navbar">
                 <div class="div_barra_principal">
@@ -107,7 +111,6 @@ const TelaInicial = () => {
                     </div> */}
 
                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m10 17l5-5l-5-5" /></svg>
-
                 </div>
                 <div class="opcoes_eventos">
                     
@@ -124,9 +127,9 @@ const TelaInicial = () => {
                     <button onClick={() =>{handleClick("CriarEventos");}} class={botao === 'CriarEventos' ?'DivEventosAtivo': "div_eventos"}>
                         Criar Evento
                     </button>
-
-
                 </div>
+
+                <div className='BotaoExibirTodos'><button>Exibir todos</button></div>
                 <div className='cards'>
                     {clicado}
                 

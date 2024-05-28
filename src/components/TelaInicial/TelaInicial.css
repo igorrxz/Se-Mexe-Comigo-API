@@ -15,6 +15,30 @@
     display: flex;
     justify-content: right;
 }
+.BotaoExibirTodos{
+    display: flex;
+    justify-content: start;
+    height: 30px;
+
+}
+
+.BotaoExibirTodos button{
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: 500;
+
+}
+
+.OcultarSideBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 252px);
+    height: 100%;
+    background-color: rgba(91, 89, 89, 0.5);
+    z-index: 9;
+}
 
 .div_pai_navbar {
     display: flex;
@@ -191,9 +215,8 @@ input:focus {
     display: flex;
     flex-direction: column;
     
-    flex-wrap: wrap;
     justify-content: space-between;
-    height: 100%;
+    width: 100%;
 }
 
 .DivEventosAtivo{
@@ -203,3 +226,17 @@ input:focus {
     display: flex;
     text-decoration: underline;
 }
+
+/* @media(min-width: 700px){
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; /* ajuste este valor para o espaço desejado entre os itens */
+        
+       
+    /* }
+
+    .cards div{
+        width: 300px;
+    }
+    */

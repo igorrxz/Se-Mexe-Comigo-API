@@ -10,5 +10,4 @@ function Input({Nome}) {
     </div>
   )
 }
-
 export default Input

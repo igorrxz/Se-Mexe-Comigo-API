@@ -37,6 +37,9 @@ function FinalizarCriarEvento() {
                 <Input Nome="Local"/>
                 <Input Nome="Ponto de referência"/>
         </div>
+        <div className='DivBotaoCriarEvento'>
+              <button className="BotaoCriarEvento">Criar Evento</button>
+        </div>
 
     </div>
   )

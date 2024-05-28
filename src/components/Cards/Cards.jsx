@@ -4,7 +4,6 @@ const Cards = ({NomeAtividade, SubnomeEsporte, Imagem}) => {
     return (
         <div class="sessao_cards">
             <button>
-
                 <img class="img_cards" src= {Imagem}/>
                 <div class="info_cards">
                     <p class="nome_esporte">{NomeAtividade}</p>

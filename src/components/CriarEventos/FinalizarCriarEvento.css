@@ -66,3 +66,20 @@
     border-radius: 30px;
     background-color: #e8e8ea;
 }
+
+.BotaoCriarEvento{
+    border: #F7931D 1px solid;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #F7931D;
+    color: white;
+    margin-top: 15px;
+    height: 25px;
+}
+
+.DivBotaoCriarEvento{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
