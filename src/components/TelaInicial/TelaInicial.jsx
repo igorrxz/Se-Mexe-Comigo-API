@@ -1,16 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import "./TelaInicial.css"
 import Cards from "../Cards/Cards"
 import { Link } from 'react-router-dom'
 import CriarEventos from '../CriarEventos/CriarEventos'
 import ProximosEventos from '../ProximosEventos/ProximosEventos'
 import MeusEventos from '../MeusEventos/MeusEventos'
+import SideBar from '../SideBar/SideBar'
 
 
 const TelaInicial = () => {
     const [clicado, setClicado] = useState(<ProximosEventos/>);
     const [botao, setBotaoClicado] = useState('ProximosEventos')
-    
+    const [sideBarInvisible, setSidebarVisible] = useState(false)
+   
+    const sideBarClicada = () =>{
+        setSidebarVisible(!sideBarInvisible);
+    }
     const handleClick = (componente) =>{
         switch(componente) {
             case "MeusEventos":
@@ -33,6 +38,8 @@ const TelaInicial = () => {
     return (
 
         <div class="div_pai">
+            {sideBarInvisible &&(<div className='ContainerSideBar'><SideBar/> </div>)}
+            
             <div class="div_pai_navbar">
                 <div class="div_barra_principal">
                     <div>
@@ -49,10 +56,12 @@ const TelaInicial = () => {
                     </div>
                 </div>
                 <div class="container_lateral">
-                    <div class="botao_lateral">
+                    <button onClick={sideBarClicada} class="botao_lateral">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" focusable="false" class="tamanho_botao_lateral" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-                    </div>
+                    </button>
                 </div>
+                    
+
 
             </div>
                 <div className="container">

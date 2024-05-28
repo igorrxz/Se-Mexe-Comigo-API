@@ -8,6 +8,14 @@
 
 }
 
+.ContainerSideBar{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
 .div_pai_navbar {
     display: flex;
     flex-direction: row;

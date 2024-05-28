@@ -17,7 +17,7 @@ import{
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <SideBar/>
+    element: <HomePage/>
   },
 
   {
