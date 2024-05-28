@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import jpIMG from "./assets/jp.svg";
+import jpIMG from "../../assets/jp.svg";
 import "./LoginPage.css";
 
 const LoginPage = () => {

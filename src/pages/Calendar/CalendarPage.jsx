@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Calendar from 'react-calendar';
-import 'react-calendar/dist/CalendarPage.css';
+import 'react-calendar/dist/Calendar.css';
+import './CalendarPage.css';
 
 export function CalendarPage () {
     const [date, setDate] = useState(new Date());
@@ -41,11 +42,11 @@ export function CalendarPage () {
     return (
     <div className='app'>
         <header className='header'>
-        <a href='https://www.google.com.br/'>
-            <img src='Back.png' alt='Botão de Voltar' className='button'/>
-        </a>
+            <a href='https://www.google.com.br/'>
+                <img src='../../src/assets/Back.png' alt='Botão de Voltar' className='button'/>
+            </a>
         
-        <h1 className='text-center'>Calendário de Eventos</h1>
+            <h1 className='text-center'>Calendário de Eventos</h1>
         </header>
 
         <div className='calendario'>
