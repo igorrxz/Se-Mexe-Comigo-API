@@ -10,13 +10,17 @@ import PhotoCamera from "@/common/components/svg/PhotoCamera"
 import useOption from "./userOptions"
 import EditData from "./EditData/EditData"
 import Notification from "./Notifications/Notification"
-import SuportPage from "./Suport/SuportPage"
+import SupportPage from "./Support/SupportPage"
 
 
 function DisplayableOptions({option}) {
   switch(option) {
     case "notifications": return <Notification/>
+<<<<<<< HEAD
     case "suport": return <SuportPage/>
+=======
+    case "suport": return <SupportPage/>
+>>>>>>> original-main/profile
     case "editdata": 
     default: return <EditData />
   }

@@ -1,4 +1,5 @@
 .base {
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -26,3 +27,32 @@
 
   flex-grow: 1;
 }
+=======
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  
+    padding: 1rem;
+  
+    background: linear-gradient(
+      -270deg,
+      rgba(243, 114, 22, 0.45),
+      rgba(243, 114, 22, 0.2)
+    );
+    border-radius: 99px;
+  
+    overflow: hidden;
+  }
+  
+  .innerInput {
+    display: block;
+  
+    height: 100%;
+  
+    background: transparent;
+    border: none;
+    outline: none;
+  
+    flex-grow: 1;
+  }
+>>>>>>> original-main/profile
