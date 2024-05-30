@@ -3,7 +3,7 @@ import "./Esportes.css"
 import Cards from "../Cards/Cards"
 import { Link } from 'react-router-dom'
 
-const Esportes = ({Titulo}) => {
+const Esportes = ({Titulo, NomeAtividade, SubnomeEsporte, img}) => {
   return (
     <div>
         <div class='navbar'>
@@ -19,13 +19,16 @@ const Esportes = ({Titulo}) => {
        
         </div>
       <div class="divcorpo">
-        <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
-        <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
-        <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
-        <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
-        <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
+       <div className='ListasCards'>
         
-
+          <Cards NomeAtividade={NomeAtividade} SubnomeEsporte={SubnomeEsporte}Imagem={img} />
+          <Cards NomeAtividade={NomeAtividade} SubnomeEsporte={SubnomeEsporte}Imagem={img} />
+          <Cards NomeAtividade={NomeAtividade} SubnomeEsporte={SubnomeEsporte}Imagem={img} />
+          <Cards NomeAtividade={NomeAtividade} SubnomeEsporte={SubnomeEsporte}Imagem={img} />
+          <Cards NomeAtividade={NomeAtividade} SubnomeEsporte={SubnomeEsporte}Imagem={img} />
+       </div>
+        
+        {/* https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616 */}
 
       </div>
 

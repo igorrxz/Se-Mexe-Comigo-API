@@ -18,7 +18,7 @@ function CriarEvento() {
         </div>
         <div class="DivBoddy">
           
-          <Link to="CriarEvento">
+          <Link to="/FinalizarCriarEventosPage">
           <button class="ButtonProximo">
             <span>Proximo</span>
           </button>
