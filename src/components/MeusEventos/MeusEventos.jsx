@@ -15,6 +15,12 @@ function MeusEventos() {
                 <Link to="/Evento">
                     <Cards NomeAtividade={"Funcional Jaqueira"} SubnomeEsporte={"Funcional"}Imagem={"https://uploaddeimagens.com.br/images/004/527/556/full/FUNCIONAL.png?1688152616"} />
                 </Link>
+                <Link to="/Evento">
+                    <Cards NomeAtividade={"Mobilidade"} SubnomeEsporte={"Outros"}Imagem={"https://uploaddeimagens.com.br/images/004/629/415/original/OUTROS.png?1696593196"} />
+                </Link>
+                <Link to="/Evento">
+                    <Cards NomeAtividade={"Passeio até Boa viagem"} SubnomeEsporte={"Ciclismo"}Imagem={"https://uploaddeimagens.com.br/images/004/527/546/full/CICLISMO.png?1688152279"} />
+                </Link>
     </div>
   )
 }
