@@ -8,42 +8,37 @@ export function CalendarPage () {
 
     const eventos = [
         {
-        nome: 'FutVôlei',
-        data: '02/05',
-        horario: '14:00'
-        },
-        {
-        nome: 'CrossFit',
-        data: '07/05',
+        nome: 'Atlético Bull',
+        data: '30/04',
         horario: '08:00'
         },
         {
-        nome: 'Futsal',
-        data: '11/05',
-        horario: '19:00'
+        nome: 'Funcional Jaqueira',
+        data: '30/04',
+        horario: '08:00'
         },
         {
-        nome: 'Corrida',
-        data: '16/05',
-        horario: '07:30'
+        nome: 'Jogo de Vôlei',
+        data: '30/04',
+        horario: '08:00'
         },
         {
-        nome: 'Vôlei',
-        data: '20/05',
-        horario: '10:00'
+        nome: 'Mobilidade',
+        data: '30/04',
+        horario: '08:00'
         },
         {
-        nome: 'Caminhão da Musculação',
-        data: '02/06',
-        horario: '17:00'
-        }
+        nome: 'Passeio até Boa Viagem',
+        data: '30/04',
+        horario: '08:00'
+        }        
     ];
 
     return (
     <div className='app'>
         <header className='header'>
-            <a href='https://www.google.com.br/'>
-                <img src='../../src/assets/Back.png' alt='Botão de Voltar' className='button'/>
+            <a className="calendario-voltar" href='https://www.google.com.br/'>
+                <img className="calendario-voltar__icone" src='../../src/assets/Back.png' alt='Botão de Voltar'/>
             </a>
         
             <h1 className='text-center'>Calendário de Eventos</h1>

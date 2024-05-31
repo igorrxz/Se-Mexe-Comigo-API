@@ -7,9 +7,9 @@ import removeButton from '../../assets/remove-button.png';
 
 function Evento() {
   return (
+    <>
+    <div className="background"></div>
     <div className="Evento">
-      <div className="background"></div>
-
       <div className="titulo">
         <a href="#">
           <img src={logoEvento} alt="Ícone do Evento" className="icone-evento" />
@@ -28,6 +28,7 @@ function Evento() {
         <Chat />
       </div>
     </div>
+    </>
   );
 }
 

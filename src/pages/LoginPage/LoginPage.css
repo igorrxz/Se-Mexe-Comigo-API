@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ body, html {
 }
 
 .container-login {
+  position: absolute;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -42,7 +44,7 @@ body, html {
   font-family: Nunito, sans-serif;
   display: block;
   font-size: 30px;
-  color: black;
+  color: rgb(56, 56, 56);
   line-height: 1.2;
   text-align: center;
 }
@@ -175,19 +177,4 @@ body, html {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-
-.txt1 {
-  font-size: 14px;
-  color: #adadad;
-  line-height: 1.5;
-  padding-right: 5px;
-  text-decoration: none;
-}
-
-.txt2 {
-  font-size: 14px;
-  color: blue;
-  line-height: 1.5;
-  text-decoration: none;
 }

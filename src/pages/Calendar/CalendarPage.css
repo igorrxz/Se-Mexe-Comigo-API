@@ -2,15 +2,39 @@
     display: flex;
     text-align: center;
     align-items: center;
-    margin: 20px 10px 60px 10px;
+    margin-block: 50px 72px;
+}
+
+@media (width <= 480px) {
+    .header {
+        margin-top: calc(50px + 24px);
+    }
+
+    .calendario-voltar {
+        top:24px;
+    }
+}
+
+.calendario-voltar {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    transform: translateY(0%);
+}
+
+
+.calendario-voltar__icone {
+    height: 24px;
 }
 
 .text-center {
-    color: orange;
+    color: #FF6B00;
     margin: auto;
-    font-size: 24px;
-    text-decoration: underline;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
 }
+
 
 .calendario {
     display: flex;
@@ -58,7 +82,7 @@ abbr[title] {
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
     background: white;
-    color: orange;
+    color: #FF6B00;
     border-radius: 6px;
 }
 
@@ -66,7 +90,7 @@ abbr[title] {
     background: #d4a71333;
     border-radius: 6px;
     font-weight: bold;
-    color: orange;
+    color: #FF6B00;
 }
 
 .react-calendar__tile--now:enabled:hover,
@@ -74,7 +98,7 @@ abbr[title] {
     background: #d4a71333;
     border-radius: 6px;
     font-weight: bold;
-    color: orange;
+    color: #FF6B00;
 }
 
 .react-calendar__tile--hasActive:enabled:hover,
@@ -83,7 +107,7 @@ abbr[title] {
 }
 
 .react-calendar__tile--active {
-    background: orange;
+    background: #FF6B00;
     border-radius: 6px;
     font-weight: bold;
     color: white;
@@ -91,7 +115,7 @@ abbr[title] {
 
 .react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
-    background: orange;
+    background: #FF6B00;
     color: white;
 }
 
@@ -101,7 +125,7 @@ abbr[title] {
 
 .react-calendar__tile--range {
     background: white;
-    color: orange;
+    color: #FF6B00;
     border-radius: 0;
 }
 
@@ -110,7 +134,7 @@ abbr[title] {
     border-bottom-right-radius: 6px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    background: orange;
+    background: #FF6B00;
     color: white;
 }
 
@@ -119,7 +143,7 @@ abbr[title] {
     border-bottom-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-    background: orange;
+    background: #FF6B00;
     color: white;
 }
 
@@ -127,29 +151,37 @@ abbr[title] {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: orange;
+    color: #FF6B00;
     margin-top: 60px;
+    margin-bottom: 30px;
     font-size: 20px;
 }
 
 .lista-eventos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    max-width: 600px;
+    margin-inline: auto;
+    padding-inline: calc(2 * var(--container-padding));
 }
 
 ul {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding-inline-start: 0;
 }
 
 li {
     text-align: justify;
+    list-style: disc;
+    /* list-style: circle; */
     border-radius: 2.5px;
 }
 
 .evento {
-    background: rgb(233, 233, 233);
-    padding: 6px;
-    margin: 6px;
+    /* background: rgb(233, 233, 233); */
+    /* padding: 6px; */
+    padding-block: 6px;
+    margin-block: 6px;
+    /* margin: 6px; */
 }

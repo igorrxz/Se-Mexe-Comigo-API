@@ -52,6 +52,7 @@ function Chat() {
               {message.text}
             </div>
             <input
+            className="input-message"
               type="file"
               id="fileInput-user"
               style={{ display: 'none' }}

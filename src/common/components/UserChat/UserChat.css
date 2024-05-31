@@ -34,7 +34,7 @@
 .message {
   padding: 10px;
   border-radius: 10px;
-  max-width: 80%;
+  /* max-width: 80%; */
   word-wrap: break-word;
 }
 
@@ -46,17 +46,21 @@
 
 .input-container {
   display: flex; 
+  justify-content: space-between;
   padding: 10px;
+  gap: 10px;
   background-color: #fff;
   border-top: 1px solid #ccc;
 }
 
 .input-container input {
   flex: 1;
+  width: 100%;
+  max-width: 184px;
+
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
-  margin-right: 10px;
 }
 
 .input-container button {

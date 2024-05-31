@@ -12,9 +12,9 @@ export default function App(){
   return (
     <BrowserRouter>
       <Routes>
-        <Route Component={Chat} path="/" />
+        <Route Component={Chat} path="/chat" />
         <Route Component={CalendarPage} path="/calendar" />
-        <Route Component={LoginPage} path="/login" />
+        <Route Component={LoginPage} path="/" />
         <Route Component={ProfilePage} path="/profile" />
         <Route Component={HomePage} path="/home" />
       </Routes>
