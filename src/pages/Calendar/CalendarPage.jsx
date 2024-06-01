@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
 import './CalendarPage.css'
+
 import calendarImage from '@/assets/Back.png'
 
 import eventos from '@/common/mocks/eventos'

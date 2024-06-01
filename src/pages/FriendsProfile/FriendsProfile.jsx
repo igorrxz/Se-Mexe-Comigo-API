@@ -13,7 +13,6 @@ export default function FriendsProfile() {
             <Breadcrumb className={styles.breadcrumb}>
                 <li>Home</li>
                 <li>Se Mexe Comigo</li>
-                <li>Ai calica</li>
             </Breadcrumb>
             <h2 className={styles.title}>Se Mexe Comigo</h2>
             <section className={styles.wrapper}>
@@ -22,7 +21,7 @@ export default function FriendsProfile() {
                         <img src={styles.userImage} alt="User Image Resource" />
                     </picture>
                     <h6 className={styles.username}>
-                        Matheus Guilherme da Silva Lins
+                        CFIT Healthtech Analytics
                     </h6>
                     <div className={styles.field}>
                         <Star className={styles.star} height={24} width={24} />
@@ -43,7 +42,7 @@ export default function FriendsProfile() {
                         </div>
                         <div>
                             <h6>Data de Nascimento</h6>
-                            <span>29/10/2000</span>
+                            <span>22/07/2003</span>
                         </div>
                     </div>
                     <div className={`${styles.field} ${styles.fieldInRow}`}>
@@ -51,7 +50,7 @@ export default function FriendsProfile() {
                             <UserIcon className={styles.icon} />
                         </div>
                         <div>
-                            <h6>Genero</h6>
+                            <h6>Gênero</h6>
                             <span>Masculino</span>
                         </div>
                     </div>

@@ -32,7 +32,6 @@
     margin: auto;
     font-size: 20px;
     text-transform: uppercase;
-    /* text-decoration: underline; */
 }
 
 
@@ -158,30 +157,22 @@ abbr[title] {
 }
 
 .lista-eventos {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     max-width: 600px;
     margin-inline: auto;
     padding-inline: calc(2 * var(--container-padding));
 }
 
 ul {
-    /* list-style-type: none; */
     padding-inline-start: 0;
 }
 
 li {
     text-align: justify;
     list-style: disc;
-    /* list-style: circle; */
     border-radius: 2.5px;
 }
 
 .evento {
-    /* background: rgb(233, 233, 233); */
-    /* padding: 6px; */
     padding-block: 6px;
     margin-block: 6px;
-    /* margin: 6px; */
 }
