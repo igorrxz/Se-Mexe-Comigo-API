@@ -1,0 +1,28 @@
+.base {
+  display: flex;
+  gap: 10px;
+
+  font-size: 0.8rem;
+  color: #ccc;
+  
+  list-style: none;
+}
+
+.base > * {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+.base > *:not(:first-child) {
+  list-style-type: leftBar;
+}
+
+@counter-style leftBar {
+  system: cyclic;
+  symbols: "/";
+  suffix: " ";
+}
+
+.base > *:last-child {
+  color: #11B163;
+}
