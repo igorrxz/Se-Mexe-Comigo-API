@@ -3,7 +3,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './CalendarPage.css';
 
-export function CalendarPage () {
+export default function CalendarPage () {
     const [date, setDate] = useState(new Date());
 
     const eventos = [

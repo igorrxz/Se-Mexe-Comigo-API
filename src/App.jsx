@@ -4,11 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import ProfilePage from "@/pages/Profile/ProfilePage"
 import HomePage from "@/pages/HomePage/HomePage"
-import LoginPage from "./pages/LoginPage/LoginPage"
-import { CalendarPage } from "./pages/Calendar/CalendarPage"
+import LoginPage from "@/pages/LoginPage/LoginPage"
+import FriendsProfile from "@/pages/FriendsProfile"
+import CalendarPage from "@/pages/Calendar/CalendarPage"
 import Chat from "@/pages/Chat/ChatPage"
 
-export default function App(){
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -16,7 +17,8 @@ export default function App(){
         <Route Component={CalendarPage} path="/calendar" />
         <Route Component={LoginPage} path="/" />
         <Route Component={ProfilePage} path="/profile" />
-        <Route Component={HomePage} path="/home" />
+        <Route Component={HomePage} path="/" />
+        <Route Component={FriendsProfile} path="/friendsprofile" />
       </Routes>
     </BrowserRouter>
   )
