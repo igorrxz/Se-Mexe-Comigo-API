@@ -5,12 +5,8 @@
   justify-content: center;
 
   padding-block: 4.44vw;
-<<<<<<< HEAD
-  /* padding-left: 1rem; */
-=======
    padding-left: 1rem;
    padding-right: 1rem; 
->>>>>>> original-main/profile
   padding-inline: var(--container-padding);
 
   border: 1px solid #000;
@@ -41,12 +37,6 @@
 
 @media (orientation: portrait) {
   .optionBar {
-<<<<<<< HEAD
-    /* display: non; */
-  
-=======
      gap: 1.5rem; 
-  
   }
->>>>>>> original-main/profile
 }

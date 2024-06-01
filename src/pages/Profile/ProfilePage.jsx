@@ -16,11 +16,7 @@ import SupportPage from "./Support/SupportPage"
 function DisplayableOptions({option}) {
   switch(option) {
     case "notifications": return <Notification/>
-<<<<<<< HEAD
-    case "suport": return <SuportPage/>
-=======
     case "suport": return <SupportPage/>
->>>>>>> original-main/profile
     case "editdata": 
     default: return <EditData />
   }

@@ -1,0 +1,54 @@
+.friendsProfile {
+  padding-inline: 16vw;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+
+.wrapper {
+  padding: 2rem;
+
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+}
+
+.username {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.subtitle {
+  display: inline-block;
+  
+  margin-left: 1rem;
+}
+
+.field {
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+
+  border-bottom: 1px solid #444;
+}
+
+.avaliation {
+  display: flex;
+}
+
+.diagram {
+  width: 100%;
+  padding-inline: 2rem;
+  flex-grow: 1;
+}
+
+.grade {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
