@@ -2,26 +2,14 @@
     display: flex;
     text-align: center;
     align-items: center;
-    margin-block: 50px 72px;
-}
-
-@media (width <= 480px) {
-    .header {
-        margin-top: calc(50px + 24px);
-    }
-
-    .calendario-voltar {
-        top:24px;
-    }
+    margin-bottom: 60px;
 }
 
 .calendario-voltar {
-    position: absolute;
     top: 50px;
     left: 10px;
     transform: translateY(0%);
 }
-
 
 .calendario-voltar__icone {
     height: 24px;
@@ -33,7 +21,6 @@
     font-size: 20px;
     text-transform: uppercase;
 }
-
 
 .calendario {
     display: flex;

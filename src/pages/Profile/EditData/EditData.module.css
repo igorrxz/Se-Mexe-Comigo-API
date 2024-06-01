@@ -36,4 +36,7 @@
     display: block;
 
     margin-inline: auto;
+
+    margin-bottom: 20px;
+    padding: 10px;
 }
