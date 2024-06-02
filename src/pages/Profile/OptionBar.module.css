@@ -21,6 +21,8 @@
   font-weight: 500;
 
   cursor: pointer;
+
+  list-style-type: none;
 }
 
 .item[data-item-active-status="normal"] {

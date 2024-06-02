@@ -62,9 +62,9 @@ function SportScorePage() {
         </div>
       </header>
 
-      <main>
+      <main className={styles.main}>
         <div className={styles.podium}>
-          <ul>
+          <ul className={styles.list}>
             <li className={styles.segundo}>
               <span>2 °</span>
               <img
@@ -72,8 +72,7 @@ function SportScorePage() {
                 src={userFotos.yuri}
                 alt="2° lugar"
                 onClick={() => handleImageClick('yuri')}
-              />
-              <input
+              /> <input
                 type="file"
                 id="fileInput-yuri"
                 style={{ display: 'none' }}
@@ -131,7 +130,7 @@ function SportScorePage() {
         </div>
       </main>
 
-      <section>
+      <section className={styles.section}>
         <ul className={styles.ranking}>
           <div className={styles.row}>
             <p>4°</p>
@@ -303,6 +302,7 @@ function SportScorePage() {
             <div className={styles.containerSeguir}>
               <button onClick={() => handleFollowClick('pedro')}>
                 {seguindo.pedro ? 'Seguindo' : 'Seguir +'}
+mz
               </button>
             </div>
           </div>
