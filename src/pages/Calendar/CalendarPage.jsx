@@ -3,9 +3,9 @@ import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
 import './CalendarPage.css'
 
-import calendarImage from '@/assets/Back.png'
 
 import eventos from '@/common/mocks/eventos'
+import Arrow from '@/common/components/svg/Arrow'
 
 export default function CalendarPage() {
     const [date, setDate] = useState(new Date())
@@ -14,11 +14,7 @@ export default function CalendarPage() {
         <div className="app">
             <header className="header">
                 <a className="calendario-voltar">
-                    <img
-                        className="calendario-voltar__icone"
-                        src={calendarImage}
-                        alt="Botão de Voltar"
-                    />
+                    <Arrow/>
                 </a>
 
                 <h1 className="text-center">Calendário de Eventos</h1>
