@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import jpIMG from "../../assets/jp.svg";
 import "./LoginPage.css";
+
+import jpIMG from "../../assets/jp.svg";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");

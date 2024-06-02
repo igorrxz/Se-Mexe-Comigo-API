@@ -1,7 +1,7 @@
-// src/Evento/Evento.js
 import React from 'react';
 import './ChatPage.css'
 import Chat from '../../common/components/UserChat/UserChat';
+
 import logoEvento from '../../assets/logo-evento.png';
 import removeButton from '../../assets/remove-button.png';
 

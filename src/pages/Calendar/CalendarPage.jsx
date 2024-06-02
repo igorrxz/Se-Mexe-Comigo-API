@@ -3,7 +3,6 @@ import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
 import './CalendarPage.css'
 
-
 import eventos from '@/common/mocks/eventos'
 import Arrow from '@/common/components/svg/Arrow'
 

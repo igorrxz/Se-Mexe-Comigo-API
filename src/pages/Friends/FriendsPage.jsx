@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './FriendsPage.module.css';
-import backImage from '@/assets/Back.png'
-import userImage from '@/assets/foto-usuario.png'
 import Arrow from '@/common/components/svg/Arrow';
+
+import userImage from '@/assets/foto-usuario.png'
 
 function FriendsPage() {
   const onlineFriends = [
