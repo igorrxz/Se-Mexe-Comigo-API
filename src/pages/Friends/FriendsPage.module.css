@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 20px 10px 20px 10px;
+}
+
+.titulo {
+    color: #FF6B00;
+    font-size: 24px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.nomeAmigos {
+    background-color: #F6EFEF;
+    color: #616161;
+    border: none;
+    border-radius: 24px;
+    padding: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 85%;
+}
+
+.nomeAmigos::placeholder {
+    background: url(../../src/assets/pesquisa.png) no-repeat;
+    background-size: 16px;
+    background-position: left center;
+    text-align: center;
+    align-items: center;
+}
+
+.online {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 6px;
+    background-color: #ff8d3c;;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    width: 75px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.amigosList {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+.amigo {
+    background-color: #F6EFEF;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amigoFilho {
+    margin-right: 15px;
+}
+
+.amigoInfo {
+    display: flex;
+    align-items: center;
+}
+
+.amigoInfoTexto {
+    margin-left: 10px;
+    display: block;
+}
+
+.imagemUsuario {
+    width: 40px;
+    height: 40px;
+}
+
+.status {
+    color: #6C6868;
+    font-size: 12px;
+}
+
+input[type="submit"] {
+    padding: 5px 8px;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #FF6B00;;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 166, 0);
+    border: 1px solid black;
+}
+
+.offline {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 6px;
+    background-color: #ff8d3c;;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    width: 75px;
+    text-align: center;
+    border-radius: 24px;
+}

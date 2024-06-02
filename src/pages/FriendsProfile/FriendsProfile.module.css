@@ -1,0 +1,116 @@
+.friendsProfile {
+  padding-top: 3vw;
+  padding-inline: 16vw;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  padding: 4rem 2rem;
+
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+}
+
+.centralize {
+  display: block;
+
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+
+.picture {
+  display: flex;
+  place-content: center;
+
+  width: 8rem;
+  height: 8rem;
+  margin-inline: auto;
+  aspect-ratio: 1/1;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+.username {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.star {
+  margin-inline: 14px;
+}
+
+.subtitle {
+  display: inline-block;
+  
+  margin-left: 1rem;
+
+}
+
+.field {
+  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.fieldInRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avaliation {
+  display: flex;
+}
+
+.diagram {
+  width: 100%;
+  padding-left: 2rem;
+  flex-grow: 1;
+}
+
+.grade {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.orangeCircle {
+  position: relative;
+
+  display: inline-flex;
+  place-content: center;
+
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1/1;
+
+  border-radius: 50%;
+  background-color: var(--color-orange);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+}
+
+@media (width <= 480px) {
+  .friendsProfile {
+    padding-inline: 1rem;
+  }
+}
