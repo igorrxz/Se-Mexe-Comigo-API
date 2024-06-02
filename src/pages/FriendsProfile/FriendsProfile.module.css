@@ -3,8 +3,6 @@
   padding-inline: 16vw;
 }
 
-
-
 .breadcrumb {
   margin-bottom: 2rem;
 }
@@ -38,7 +36,6 @@
   margin-inline: auto;
   aspect-ratio: 1/1;
 
-  background-color: #888;
   border-radius: 50%;
 
   overflow: hidden;
@@ -59,7 +56,6 @@
   margin-left: 1rem;
 
 }
-
 
 .field {
   padding-bottom: 2rem;

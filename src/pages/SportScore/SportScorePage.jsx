@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import styles from './SportScorePage.module.css';
 
+import fotoUsuario from '../../assets/foto-usuario.png';
+import backImage from '../../assets/Back.png';
+
 function SportScorePage() {
   const [seguindo, setSeguindo] = useState({
     yuri: false,
@@ -15,15 +18,15 @@ function SportScorePage() {
   });
 
   const [userFotos, setUserFotos] = useState({
-    yuri: 'foto-usuario.png',
-    ailton: 'foto-usuario.png',
-    igor: 'foto-usuario.png',
-    eduardo: 'foto-usuario.png',
-    matheus: 'foto-usuario.png',
-    vitoria: 'foto-usuario.png',
-    rafael: 'foto-usuario.png',
-    arthur: 'foto-usuario.png',
-    pedro: 'foto-usuario.png',
+    yuri: fotoUsuario,
+    ailton: fotoUsuario,
+    igor: fotoUsuario,
+    eduardo: fotoUsuario,
+    matheus: fotoUsuario,
+    vitoria: fotoUsuario,
+    rafael: fotoUsuario,
+    arthur: fotoUsuario,
+    pedro: fotoUsuario,
   });
 
   const handleFollowClick = (name) => {
@@ -55,7 +58,7 @@ function SportScorePage() {
     <div className={styles.container}>
       <header>
         <div className={styles.back}>
-          <img src="Back.png" alt="Voltar" />
+          <img src={backImage} alt="Voltar" />
         </div>
         <div className={styles.title}>
           <span>SportScore</span>
@@ -66,13 +69,14 @@ function SportScorePage() {
         <div className={styles.podium}>
           <ul className={styles.list}>
             <li className={styles.segundo}>
-              <span>2 °</span>
+              <span>2°</span>
               <img
                 id="imagem"
                 src={userFotos.yuri}
                 alt="2° lugar"
                 onClick={() => handleImageClick('yuri')}
-              /> <input
+              />
+              <input
                 type="file"
                 id="fileInput-yuri"
                 style={{ display: 'none' }}
@@ -86,7 +90,7 @@ function SportScorePage() {
             </li>
 
             <li className="primeiro">
-              <span>1 °</span>
+              <span>1°</span>
               <img
                 id="imagem"
                 src={userFotos.ailton}
@@ -107,7 +111,7 @@ function SportScorePage() {
             </li>
 
             <li className={styles.terceiro}>
-              <span>3 °</span>
+              <span>3°</span>
               <img
                 id="imagem"
                 src={userFotos.igor}
@@ -302,7 +306,6 @@ function SportScorePage() {
             <div className={styles.containerSeguir}>
               <button onClick={() => handleFollowClick('pedro')}>
                 {seguindo.pedro ? 'Seguindo' : 'Seguir +'}
-mz
               </button>
             </div>
           </div>

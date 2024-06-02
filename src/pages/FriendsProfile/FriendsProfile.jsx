@@ -6,6 +6,8 @@ import UserIcon from '@/common/components/svg/UserIcon'
 import BagIcon from '@/common/components/svg/BagIcon'
 import Breadcrumb from '@/common/components/Breadcrumb/Breadcrumb'
 
+import profilePicture from '../../assets/Profile.png';
+
 export default function FriendsProfile() {
     return (
         <main className={styles.friendsProfile}>
@@ -18,10 +20,10 @@ export default function FriendsProfile() {
             <section className={styles.wrapper}>
                 <div className={styles.centralize}>
                     <picture className={styles.picture}>
-                        <img src={styles.userImage} alt="User Image Resource" />
+                        <img src={profilePicture} className={styles.userImage} alt="User Image" />
                     </picture>
                     <h6 className={styles.username}>
-                        CFIT Healthtech Analytics
+                        Nome do Usuário
                     </h6>
                     <div className={styles.field}>
                         <Star className={styles.star} height={24} width={24} />
