@@ -30,7 +30,10 @@ html {
   --section-padding: max(1rem, 1.75vw);
 
   --color-orange: #FF6B00;
-  --color-white: #fff;
+  --color-search: #F6EFEF;
+  --color-status: #616161;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
 }
 
 /* --------------------------------- MAIN & SECTION LAYOUT ---------------------------------------- */

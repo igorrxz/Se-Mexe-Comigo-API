@@ -9,7 +9,7 @@
    padding-right: 1rem; 
   padding-inline: var(--container-padding);
 
-  border: 1px solid #000;
+  border: 1px solid var(--color-black);
 
   list-style: none;
 }
@@ -31,9 +31,9 @@
 
 .item[data-item-active-status="active"] {
 
-  color: #000;
+  color: var(--color-black);
 
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--color-black);
 }
 
 @media (orientation: portrait) {
