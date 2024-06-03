@@ -288,6 +288,7 @@ section li span:last-child {
     background: none;
     border: none;
     cursor: pointer;
-    width: 35px;
-    height: 30px;
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
 }

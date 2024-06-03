@@ -1,0 +1,46 @@
+.ButtonProximo{
+    border: #F7931D 1px solid;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #F7931D;
+    color: white;
+    margin-top: 15px;
+    height: 25px;
+}
+
+
+.DivBoddy{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.InputDescricao{
+    height: 80px;
+    display: flex;
+    padding: 10px;
+    align-items: start;
+    margin: 15px;
+    border-radius: 30px;
+    background-color: #e8e8ea;
+   
+}
+
+.InputDescricao textarea {
+    display: flex;
+    align-items: start;
+    margin-left: 18px;
+    height: auto;
+    width: 100%;
+    background-color: #e8e8ea;
+    border: #e8e8ea;
+    resize: vertical;
+    overflow: auto;
+
+}
+
+
+textarea:focus {
+    outline: none;
+}

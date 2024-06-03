@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 import "./LoginPage.css";
 
 import jpIMG from "../../assets/jp.svg";
@@ -38,9 +39,11 @@ const LoginPage = () => {
               <span className="focus-input" data-placeholder="Password"></span>
             </div>
 
-            <div className="container-login-form-btn">
-              <button className="login-form-btn">Login</button>
-            </div>
+              <Link to="/home">
+                <div className="container-login-form-btn">
+                  <button className="login-form-btn">Login</button>
+                </div>
+              </Link>
           </form>
         </div>
       </div>

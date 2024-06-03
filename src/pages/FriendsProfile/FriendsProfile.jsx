@@ -12,11 +12,11 @@ export default function FriendsProfile() {
     return (
         <main className={styles.friendsProfile}>
             {/* <Back /> */}
-            <Breadcrumb className={styles.breadcrumb}>
+            {/* <Breadcrumb className={styles.breadcrumb}>
                 <li>Home</li>
                 <li>Se Mexe Comigo</li>
             </Breadcrumb>
-            <h2 className={styles.title}>Se Mexe Comigo</h2>
+            <h2 className={styles.title}>Se Mexe Comigo</h2> */}
             <section className={styles.wrapper}>
                 <div className={styles.centralize}>
                     <picture className={styles.picture}>

@@ -1,0 +1,32 @@
+.barra_pesquisa {
+
+    /* width: 550px; */
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #e8e8ea;
+
+}
+
+.input_pesquisa {
+
+    background-color: #e8e8ea;
+    border: #e8e8ea;
+    padding: 10px;
+    margin-left: 10px;
+    width: 100%;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.barra_icon {
+
+    height: 25px;
+    width: 30px;
+}

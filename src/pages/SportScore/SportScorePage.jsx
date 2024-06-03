@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './SportScorePage.module.css';
-
+import { Link } from 'react-router-dom'
 import fotoUsuario from '../../assets/foto-usuario.png';
 import backImage from '../../assets/Back.png';
 
@@ -58,7 +58,9 @@ function SportScorePage() {
     <div className={styles.container}>
       <header>
         <div className={styles.back}>
-          <img src={backImage} alt="Voltar" />
+          <Link to="/home">
+            <img className={styles.ImagemVoltar} src={backImage} alt="Voltar"/>
+          </Link>
         </div>
         <div className={styles.title}>
           <span>SportScore</span>

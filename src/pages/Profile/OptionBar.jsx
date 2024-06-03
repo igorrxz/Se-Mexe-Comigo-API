@@ -4,6 +4,7 @@ import useOption from "./userOptions"
 
 export default function OptionBar(className, ...props) {
   const [option, setOption] = useOption()
+ 
 
   const switchToNotifications = () => setOption("notifications")
   const switchToEditData = () => setOption("editdata")

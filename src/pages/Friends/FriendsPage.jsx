@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FriendsPage.module.css';
 import Arrow from '@/common/components/svg/Arrow';
+import { Link } from 'react-router-dom'
 
 import userImage from '@/assets/foto-usuario.png'
 
@@ -28,9 +29,11 @@ function FriendsPage() {
           </div>
         </div>
       </div>
-      <div className={styles.amigoFilho}>
-        <input type='submit' value='Ver Perfil'/>
-      </div>
+      <Link to="/friendsprofile">
+        <div className={styles.amigoFilho}>
+          <input type='submit' value='Ver Perfil'/>
+        </div>
+      </Link>
     </div>
   );
 
@@ -47,7 +50,9 @@ function FriendsPage() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <Arrow/>
+        <Link to="/home">
+          <Arrow/>
+        </Link>
         <h1 className={styles.titulo}>Meus Amigos</h1>
       </header>
       <div className={styles.buscaAmigos}>
