@@ -11,6 +11,7 @@ import useOption from "./userOptions"
 import EditData from "./EditData/EditData"
 import Notification from "./Notifications/Notification"
 import SupportPage from "./Support/SupportPage"
+import { Link } from 'react-router-dom'
 
 
 function DisplayableOptions({option}) {
@@ -27,15 +28,18 @@ export default function ProfilePage() {
 
   return (
     <main className={`${styles.profile} single`}>
-      <Arrow className={styles.back} />
       <div className="container">
         <div className={styles.top}>
+        <Link to="/home">
+            <Arrow className={styles.back} />
+        </Link>
           <img
             className={styles.image}
             src={profileImage}
             alt="Profile Image"
           />
           <p className={`${styles.name} big`}>CFIT Healthtech Analytics</p>
+          
           <PhotoCamera className={styles.camera} />
         </div>
         <OptionBar className={styles.customOptionBar}/>

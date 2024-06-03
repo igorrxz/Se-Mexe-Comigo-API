@@ -12,7 +12,7 @@ import Chat from '@/pages/Chat/ChatPage';
 import EventoPage from './pages/EventoPage/EventoPage';
 import EsportesPages from './pages/EsportesPage/EsportesPage';
 import FinalizarCriarEventosPage from './pages/CriarEventosPage/FinalizarCriarEventosPage';
-import TelaInicial from './components/TelaInicial/TelaInicial';
+
 
 export default function App() {
   return (
@@ -29,7 +29,6 @@ export default function App() {
         <Route Component={EventoPage} path="/EventoPage"/>
         <Route Component={EsportesPages} path="/EsportesPage/:esporteClicado" />
         <Route Component={FinalizarCriarEventosPage} path="FinalizarCriarEventosPage" />
-        <Route Component={TelaInicial} path="/TelaInicial/:section" />
       </Routes>
     </BrowserRouter>
   );
