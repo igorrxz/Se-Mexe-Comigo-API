@@ -16,7 +16,7 @@ export default function BagIcon({ ...props }) {
             <path
                 d="M6.30005 0L6.30005 2.45M14 0V2.45"
                 stroke="white"
-                stroke-width="2.8"
+                strokeWidth="2.8"
             />
         </svg>
     )

@@ -6,7 +6,7 @@ import FinalizarCriarEvento from '../CriarEventos/FinalizarCriarEvento'
 
 function CriarEvento() {
   return (
-    <div class="DivPai">
+    <div className="DivPai">
 
         <Input Nome={'Nome do evento'}/>
         <Input Nome={"Modalidade"}/>
@@ -16,10 +16,10 @@ function CriarEvento() {
         <div className="InputDescricao">
             <textarea placeholder="Descrição"></textarea>
         </div>
-        <div class="DivBoddy">
+        <div className="DivBoddy">
           
           <Link to="/FinalizarCriarEventosPage">
-          <button class="ButtonProximo">
+          <button className="ButtonProximo">
             <span>Proximo</span>
           </button>
           </Link>

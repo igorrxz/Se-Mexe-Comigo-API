@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import LoginPage from '@/pages/LoginPage/LoginPage';
-import HomePage from './pages/Homepage/HomePage';
+import HomePage from './pages/HomePage/HomePage';
 import ProfilePage from '@/pages/Profile/ProfilePage';
 import FriendsPage from '@/pages/Friends/FriendsPage';
 import FriendsProfile from '@/pages/FriendsProfile';

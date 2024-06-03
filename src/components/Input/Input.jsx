@@ -4,8 +4,8 @@ import './Input.css'
 function Input({Nome}) {
   return (
     <div>
-        <div class="barra_pesquisa">
-                    <input class="input_pesquisa" type="text" placeholder={Nome} />
+        <div className="barra_pesquisa">
+                    <input className="input_pesquisa" type="text" placeholder={Nome} />
                 </div>
     </div>
   )
