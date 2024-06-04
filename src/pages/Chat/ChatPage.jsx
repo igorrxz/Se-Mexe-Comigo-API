@@ -1,7 +1,8 @@
-// src/Evento/Evento.js
 import React from 'react';
 import './ChatPage.css'
 import Chat from '../../common/components/UserChat/UserChat';
+import { Link } from 'react-router-dom'
+
 import logoEvento from '../../assets/logo-evento.png';
 import removeButton from '../../assets/remove-button.png';
 
@@ -16,7 +17,9 @@ function Evento() {
         </a>
 
         <a href="#">
-          <img src={removeButton} alt="Botão de Fechar" className="botao-fechar" />
+          <Link to="/EventoPage">
+            <img src={removeButton} alt="Botão de Fechar" className="botao-fechar" />
+          </Link>
         </a>
 
         <h2>

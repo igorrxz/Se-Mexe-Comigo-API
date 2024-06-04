@@ -1,20 +1,10 @@
 body, html {
   margin: 0;
   padding: 0;
-  /* height: 100%; */
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
   font-family: Arial, sans-serif;
 }
 
 .Evento {
-  /* width: 90%; */
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%); */
   margin-inline: 1rem;
   margin-top: 20vh;
 
@@ -91,9 +81,9 @@ hr {
 }
 
 .mensagem {
-  background-color: white;
-  border: 1px solid black;
-  color: black;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
   border-radius: 24px;
   padding: 1em;
   width: 100%;
@@ -103,5 +93,5 @@ hr {
   font-size: 14px;
   font-weight: 400;
   text-align: left;
-  color: black;
+  color: var(--color-orange);
 }

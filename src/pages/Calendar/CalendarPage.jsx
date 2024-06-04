@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
 import './CalendarPage.css'
-
+import { Link } from 'react-router-dom'
 
 import eventos from '@/common/mocks/eventos'
 import Arrow from '@/common/components/svg/Arrow'
@@ -14,7 +14,9 @@ export default function CalendarPage() {
         <div className="app">
             <header className="header">
                 <a className="calendario-voltar">
-                    <Arrow/>
+                    <Link to="/home">
+                        <Arrow/>
+                    </Link>
                 </a>
 
                 <h1 className="text-center">Calendário de Eventos</h1>

@@ -13,7 +13,6 @@ import Notification from "./Notifications/Notification"
 import SupportPage from "./Support/SupportPage"
 import { useNavigate } from "react-router-dom"
 
-
 function DisplayableOptions({option}) {
   switch(option) {
     case "notifications": return <Notification/>
@@ -40,6 +39,7 @@ export default function ProfilePage() {
             alt="Profile Image"
           />
           <p className={`${styles.name} big`}>CFIT Healthtech Analytics</p>
+          
           <PhotoCamera className={styles.camera} />
         </div>
         <OptionBar className={styles.customOptionBar}/>

@@ -1,9 +1,9 @@
-export default function Arrow({ width = 17, height = 30, ...props }) {
+export default function Arrow({ width = 17, height = 17, ...props }) {
   return (
     <svg
       {...props}
       width="17"
-      height="30"
+      height="17"
       viewBox="0 0 17 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
