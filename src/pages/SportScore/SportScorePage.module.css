@@ -32,7 +32,7 @@ header {
 }
 
 header span {
-    font-size: 24px;
+    font-size: 30px;
     color: #ff6b00;
 }
 
@@ -234,7 +234,7 @@ section li span:last-child {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding-left: 50px;
+    padding-left: 17px;
     font-weight: bold;
 }
 

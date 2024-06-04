@@ -38,7 +38,7 @@ export default function ProfilePage() {
             src={profileImage}
             alt="Profile Image"
           />
-          <p className={`${styles.name} big`}>CFIT Healthtech Analytics</p>
+          <p className={`${styles.name} big`}>Matheus Guilherme</p>
           
           <PhotoCamera className={styles.camera} />
         </div>
