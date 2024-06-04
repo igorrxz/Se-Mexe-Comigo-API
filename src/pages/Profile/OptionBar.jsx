@@ -20,15 +20,15 @@ export default function OptionBar({ className, ...props }) {
   return (
     <ul className={`${styles.optionBar} ${className}`}>
       <li onClick={switchToEditData} data-item-active-status={option === "editdata" ? "active" : "normal"} className={styles.item}>
-        <img src={gearIcon} alt="" />
+        <img className={styles.icon} src={gearIcon} alt="" />
         <span>Editar Dados</span>
       </li>
       <li onClick={switchToNotifications} data-item-active-status={option === "notifications" ? "active" : "normal"} className={styles.item}>
-        <img src={bellIcon} alt="" />
+        <img className={styles.icon} src={bellIcon} alt="" />
         <span>Notificações</span>
       </li>
       <li onClick={switchToSuport} data-item-active-status={option === "suport" ? "active" : "normal"} className={styles.item}>
-        <img src={supportIcon} alt="" />
+        <img className={styles.icon} src={supportIcon} alt="" />
         <span>Suporte e Ajuda</span>
       </li>
     </ul>

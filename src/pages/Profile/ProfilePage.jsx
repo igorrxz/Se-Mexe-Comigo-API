@@ -26,7 +26,7 @@ export default function ProfilePage() {
   const [option] = useOption()
   const navigate = useNavigate()
 
-  const backToHome = () => navigate("/")
+  const backToHome = () => navigate("/home")
 
   return (
     <main className={`${styles.profile} single`}>

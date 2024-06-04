@@ -50,6 +50,16 @@ section {
   overflow: scroll;
 }
 
+.noneInMobile { 
+  visibility: visible;
+}
+
+@media (width <= 480px) {
+  .noneInMobile {
+    display: none;
+  }
+}
+
 /* --------------------------------- TYPOGRAPHY ---------------------------------------- */
 
 h1 {

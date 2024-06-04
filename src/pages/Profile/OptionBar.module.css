@@ -39,10 +39,14 @@
   border-left: 3px solid #000;
 }
 
-@media (orientation: portrait) {
+.icon {
+  display: block;
+}
+
+@media (width <= 480px) {
   .optionBar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 1.5rem;
 
@@ -52,6 +56,11 @@
   .item[data-item-active-status="active"] {
     margin-left: 4px;
 
-    border-bottom: 3px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: none;
+  }
+
+  .icon {
+    display: none;
   }
 }

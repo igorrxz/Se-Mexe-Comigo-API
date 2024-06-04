@@ -6,7 +6,7 @@ import Button from "@/common/components/Button/Button"
 export default function SuportPage() {
     return (
         <div className={`${styles.suport} container seventyPercentOfScreenHeight`}>
-            <h3 className={styles.title}>Suporte e Ajuda</h3>
+            <h3 className={`${styles.title} noneInMobile`}>Suporte e Ajuda</h3>
             <SearchBar
                 placeholder="Digite alguma coisa..."
                 className={styles.searchBar}
