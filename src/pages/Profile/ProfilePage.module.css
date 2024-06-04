@@ -3,8 +3,6 @@
   padding-inline: 13vw;
 
   height: 100dvh;
-
-  overflow: hidden;
 }
 
 .back {
@@ -23,7 +21,6 @@
   grid-template-columns: 352fr 1080fr;
   grid-template-rows: 3fr 10fr;
 }
-
 
 .top {
   position: relative;  
@@ -70,8 +67,5 @@
 
   .layout {
     display: block;  
-  }
-  
-
-
+  }  
 }
