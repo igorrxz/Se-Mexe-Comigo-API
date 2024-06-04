@@ -5,7 +5,8 @@ import Fieldset from "@/common/components/Fieldset"
 
 export default function EditData() {
   return (
-    <div>
+    <div className={`${styles.editdata} seventyPercentOfHeightScreen`}>
+      <h3 className={styles.title}>Editar Dados</h3>
       <form className={styles.optionsList}>
         <Fieldset.Root className={styles.fieldset} type="input">
           <Fieldset.Label>Nome</Fieldset.Label>

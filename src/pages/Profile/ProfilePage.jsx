@@ -11,6 +11,7 @@ import useOption from "./userOptions"
 import EditData from "./EditData/EditData"
 import Notification from "./Notifications/Notification"
 import SupportPage from "./Support/SupportPage"
+import { useNavigate } from "react-router-dom"
 
 
 function DisplayableOptions({option}) {
@@ -24,11 +25,14 @@ function DisplayableOptions({option}) {
 
 export default function ProfilePage() {
   const [option] = useOption()
+  const navigate = useNavigate()
+
+  const backToHome = () => navigate("/")
 
   return (
     <main className={`${styles.profile} single`}>
-      <Arrow className={styles.back} />
-      <div className="container">
+      <Arrow className={styles.back} onClick={backToHome} />
+      <div className={`${styles.layout} container`}>
         <div className={styles.top}>
           <img
             className={styles.image}

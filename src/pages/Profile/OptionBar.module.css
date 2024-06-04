@@ -1,21 +1,25 @@
 .optionBar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2rem;
-  justify-content: center;
+  justify-content: start;
 
   padding-block: 4.44vw;
-   padding-left: 1rem;
-   padding-right: 1rem; 
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-inline: var(--container-padding);
 
-  border: 1px solid #000;
-
+  border-right: 1px solid #ddd;
   list-style: none;
 }
 
 .item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
   width: max-content;
+  padding-left: 8px;
 
   white-space: nowrap;
   font-weight: 500;
@@ -26,18 +30,28 @@
 }
 
 .item[data-item-active-status="normal"] {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .item[data-item-active-status="active"] {
-
   color: #000;
 
-  border-bottom: 1px solid #000;
+  border-left: 3px solid #000;
 }
 
 @media (orientation: portrait) {
   .optionBar {
-     gap: 1.5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    border: 1px solid #000;
+  }
+
+  .item[data-item-active-status="active"] {
+    margin-left: 4px;
+
+    border-bottom: 3px solid #000;
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import LoginPage from '@/pages/LoginPage/LoginPage';
@@ -9,6 +10,7 @@ import FriendsProfile from '@/pages/FriendsProfile';
 import SportScorePage from '@/pages/SportScore/SportScorePage';
 import CalendarPage from '@/pages/Calendar/CalendarPage';
 import Chat from '@/pages/Chat/ChatPage';
+
 
 export default function App() {
   return (

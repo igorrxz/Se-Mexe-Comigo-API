@@ -40,6 +40,12 @@ section {
   padding-inline: var(--container-padding);
 }
 
+.seventyPercentOfScreenHeight {
+  max-height: calc(0.7 * 100dvh);
+
+  overflow: scroll;
+}
+
 /* --------------------------------- TYPOGRAPHY ---------------------------------------- */
 
 h1 {

@@ -5,7 +5,8 @@ import Button from "@/common/components/Button/Button"
 
 export default function SuportPage() {
     return (
-        <div className={`${styles.suport} container`}>
+        <div className={`${styles.suport} container seventyPercentOfScreenHeight`}>
+            <h3 className={styles.title}>Suporte e Ajuda</h3>
             <SearchBar
                 placeholder="Digite alguma coisa..."
                 className={styles.searchBar}
@@ -22,7 +23,7 @@ export default function SuportPage() {
                 </Button>
             </div>
             <div className={styles.container}>
-                <h3 className={styles.title}>Enviar uma solicitação</h3>
+                <h3 className={styles.subtitle}>Enviar uma solicitação</h3>
                 <p className={styles.text}>
                     Não importa se é um probleminha técnico ou um surto, estamos aqui para
                     ajudar!

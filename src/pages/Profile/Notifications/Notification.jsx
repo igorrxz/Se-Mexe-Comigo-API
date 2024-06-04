@@ -9,6 +9,7 @@ export default function Notification() {
 
     return (
         <div>
+            <h3 className={styles.title}>Notificações</h3>
             <form className={styles.form} onSubmit={handleOnSubmit}>
                 <fieldset className={styles.fieldset}>
                     <input type="checkbox" />

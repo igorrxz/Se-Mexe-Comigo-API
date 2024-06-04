@@ -3,6 +3,16 @@
     width: 100%;
 }
 
+.title {
+    margin-left: 35px;
+    padding-bottom: 2rem;
+    margin-block: 4.44vw 2rem;
+
+    font-weight: 400;
+
+    border-bottom: 1px solid #ddd;
+}
+
 .fieldset {
     display: flex;
     justify-content: start;

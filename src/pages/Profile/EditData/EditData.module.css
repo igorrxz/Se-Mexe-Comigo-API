@@ -1,13 +1,29 @@
+.editdata {
+    max-height: calc();
+
+    overflow: scroll;
+}
+
 .fieldset {
     margin-inline: 35px;
 }
 
 .optionsList {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 42px;
 
     padding-block: 2rem;
+}
+
+.title {
+    margin-top: 4.44vw;
+    margin-left: 35px;
+    padding-bottom: 2rem;
+
+    font-weight: 400;
+    
+    border-bottom: 1px solid #ddd;
 }
 
 .genderOptions {
@@ -39,4 +55,14 @@
 
     margin-bottom: 20px;
     padding: 10px;
+}
+
+@media (width <= 480px) {
+    .title {
+        display: none;
+    }
+
+    .optionsList {
+        grid-template-columns: 1fr;
+    }
 }

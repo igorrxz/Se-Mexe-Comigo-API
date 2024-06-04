@@ -1,5 +1,10 @@
 .profile {
-  display: block;
+  display: grid;
+  padding-inline: 13vw;
+
+  height: 100dvh;
+
+  overflow: hidden;
 }
 
 .back {
@@ -7,10 +12,25 @@
   top: var(--section-padding);
   left: var(--container-padding);
   height: 24px;
+
+  cursor: pointer;
 }
+
+.layout {
+  display: grid;
+  grid-template-columns: 352fr 1080fr;
+  grid-template-rows: 3fr 10fr;
+}
+
 
 .top {
   position: relative;  
+  grid-column: 1/-1;
+
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  border-bottom: 1px solid #ddd;
 }
 
 .camera {
@@ -22,11 +42,34 @@
 .image {
   display: block;
   margin-inline: auto;
+
+  width: 144px;
+  height: 144px;
+  aspect-ratio: 1/1;
 }
 
 .name {
-  margin-bottom: 2rem;
-
+  margin-bottom: 0;
+  
   text-align: center;
   font-weight: 700;
+}
+
+@media (width <= 480px) {
+  .profile {
+    display: block;
+    padding-inline: 0;
+    
+  }
+  
+  .name {
+    margin-bottom: 2rem;
+  }
+
+  .layout {
+    display: block;  
+  }
+  
+
+
 }

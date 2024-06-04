@@ -1,6 +1,16 @@
 .suport {
-  padding-top: 20vw;
-  padding-inline: var(--container-padding);
+  padding-top: 4.44vw;
+  /* padding-inline: var(--container-padding); */
+}
+
+.title {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 35px;
+
+  font-weight: 400;
+
+  border-bottom: 1px solid #ddd;
 }
 
 .searchBar {
@@ -19,7 +29,7 @@
   padding-block: 3rem;
 }
 
-.title {
+.subtitle {
   margin-bottom: 2rem;
   text-align: center;
   font-size: 25px;
@@ -83,5 +93,12 @@
 @media (width <=300px) {
   .wrapper {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 480px) {
+  .suport {
+    padding-top: 20vw;
+
   }
 }
